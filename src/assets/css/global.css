@@ -1,0 +1,10 @@
+html,
+body,
+#app {
+    min-width: 1080px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}

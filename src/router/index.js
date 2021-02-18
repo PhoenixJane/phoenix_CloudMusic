@@ -1,27 +1,41 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import Index from '../components/Index.vue'
+import Mainarea from '../components/findmusic/Mainarea'
 
 Vue.use(VueRouter)
 
+// 哈希路由
 const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: Home
-  },
-  {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    component: Index,
+    redirect: '/mainarea',
+    children: [
+      {
+        path: '/mainarea', component: Mainarea
+      }
+    ]
   }
 ]
 
 const router = new VueRouter({
   routes
+})
+
+// 挂载路由导航守卫
+router.beforeEach((to, from, next) => {
+  // 设置登录拦截
+  if (to.path === '/mainarea') {
+    return next()
+  }
+  // 获取cookies
+  const tokenStr = window.sessionStorage.getItem('token')
+  console.log(tokenStr)
+  if (!tokenStr) {
+    return next('/mainarea')
+  }
+  next()
 })
 
 export default router
