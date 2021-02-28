@@ -8,3 +8,7 @@ body,
 a {
     text-decoration: none;
 }
+
+.el-popover img {
+    width: 200px;
+}

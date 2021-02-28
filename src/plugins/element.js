@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import { Button, Container, Header, Footer, Main, Menu, MenuItem, Input, Avatar, Carousel, CarouselItem, Breadcrumb, BreadcrumbItem, Image, Table, TableColumn, Dialog, Form, FormItem, Message, Tabs, TabPane } from 'element-ui'
+import { Button, Container, Header, Footer, Main, Menu, MenuItem, Input, Avatar, Carousel, CarouselItem, Breadcrumb, BreadcrumbItem, Image, Table, TableColumn, Dialog, Form, FormItem, Message, Tabs, TabPane, Tag, Popover } from 'element-ui'
 
 Vue.use(Button)
 Vue.use(Container)
@@ -22,4 +22,6 @@ Vue.use(Form)
 Vue.use(FormItem)
 Vue.use(Tabs)
 Vue.use(TabPane)
+Vue.use(Tag)
+Vue.use(Popover)
 Vue.prototype.$message = Message
