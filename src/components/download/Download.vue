@@ -34,8 +34,8 @@ export default {
 <style lang="less" scoped>
 #downloadPage {
   display: flex;
-  justify-content: start;
-  margin: 135px 0;
+  justify-content: flex-start;
+  margin: 119px 0;
   #pc {
     margin-right: 220px;
     h2 {

@@ -90,7 +90,7 @@ export default {
 <style lang="less" scoped>
 #header {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   margin: 50px 0;
   .albumpic {
     margin-right: 50px;

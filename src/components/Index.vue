@@ -324,7 +324,7 @@ export default {
     cursor: pointer;
     width: 100%;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     .el-avatar {
       margin-right: 15px;

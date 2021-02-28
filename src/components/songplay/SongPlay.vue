@@ -151,7 +151,7 @@ export default {
 <style lang="less" scoped>
 #mainArea {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   margin: 50px 5px;
   #albumArea {
     img {

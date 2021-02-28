@@ -2,20 +2,27 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-import './plugins/element.js'
-import 'element-ui/lib/theme-chalk/index.css'
+// import './plugins/element.js'
+// import 'element-ui/lib/theme-chalk/index.css'
 import './assets/css/global.css'
-import 'normalize.css'
+// 导入初始化样式表文件
+import 'normalize.css/normalize.css'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
+// 导入音乐播放器插件
 import Aplayer from 'vue-aplayer'
+
+// 导入NProgress包对应的JS和CSS
+import NProgress from 'nprogress'
+import 'nprogress/nprogress.css'
 
 axios.defaults.baseURL = 'http://localhost:3000'
 
 axios.defaults.withCredentials = true
 
 axios.interceptors.request.use(config => {
-  // Do something before request is sent
+  // 在request拦截器中，展示进度条Nnprogress.start()
+  NProgress.start()
   config.headers.Authorization = window.localStorage.getItem('token')
   console.log(config)
   if (config.method === 'post') {
@@ -33,6 +40,12 @@ axios.interceptors.request.use(config => {
 }, error => {
   // Do something with request error
   return Promise.reject(error)
+})
+
+axios.interceptors.response.use(config => {
+  // 在response拦截器中，隐藏进度条Nnprogress.done()
+  NProgress.done()
+  return config
 })
 
 Vue.use(VueAxios, axios)

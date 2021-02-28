@@ -80,7 +80,7 @@ export default {
   height: 210px;
   padding: 40px 0;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   .imgUrl {
     height: 100%;
     margin-right: 60px;

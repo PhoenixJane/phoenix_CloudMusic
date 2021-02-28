@@ -92,9 +92,11 @@ export default new Vuex.Store({
       state.playerInfo.songId = playerListInfo.songId
       state.playerInfo.lrc = lyric
     },
+    // 控制登录框弹出
     changeEmailVisible(state) {
       state.emailVisible = !state.emailVisible
     },
+    // 兄弟组件之间通过标志变量控制登录框
     changePleaseLoginInfo(state, boolData) {
       state.pleaseLoginInfo = boolData
     }
