@@ -4,6 +4,7 @@ import router from './router'
 import store from './store'
 // import './plugins/element.js'
 // import 'element-ui/lib/theme-chalk/index.css'
+import 'hls.js'
 import './assets/css/global.css'
 // 导入初始化样式表文件
 import 'normalize.css/normalize.css'

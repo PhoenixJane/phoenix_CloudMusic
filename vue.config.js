@@ -11,15 +11,14 @@ module.exports = {
 
         config.set('externals', {
           vue: 'Vue',
-          vuex: 'VueX',
+          vuex: 'Vuex',
           'vue-router': 'VueRouter',
           axios: 'axios',
           nprogress: 'NProgress',
-          'vue-aplayer': 'Aplayer'
         })
 
         config.plugin('html').tap(args => {
-          args[0].isPord = true
+          args[0].isProd = true
           return args
         })
       }
