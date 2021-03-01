@@ -39,6 +39,22 @@ npm run serve #启动项目服务
 
 此时, 浏览器打开, 输入网址http://localhost:8080,此时项目就完全跑起来了!
 
+## 图片预览
+
+![登录界面](./preview/loginPreview.png)
+
+![主界面](./preview/indexPreview.png)
+
+![未登录时的"我的音乐"界面](./preview/pleaseLoginPreview.png)
+
+![登录后的"我的音乐"界面](./preview/myMusicPreview.png)
+
+![热门音乐界面](./preview/hotMusiPreview.png)
+
+![下载界面](./preview/downloadPreview.png)
+
+![退出界面](./preview/logoutPreview.png)
+
 ## 警告
 
 > 1. 本项目仅用于学习练习, 本人不承担任何恶意使用后果
