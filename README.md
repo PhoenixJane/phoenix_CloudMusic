@@ -41,17 +41,31 @@ npm run serve #启动项目服务
 
 ## 图片预览
 
+> 1. 登录界面
+
 ![登录界面](./preview/loginPreview.png)
+
+> 2. 主界面
 
 ![主界面](./preview/indexPreview.png)
 
+> 3. 未登录时的"我的音乐"界面
+
 ![未登录时的"我的音乐"界面](./preview/pleaseLoginPreview.png)
+
+> 4. 登录后的"我的音乐"界面
 
 ![登录后的"我的音乐"界面](./preview/myMusicPreview.png)
 
+> 5. 热门音乐界面
+
 ![热门音乐界面](./preview/hotMusiPreview.png)
 
+> 6. 下载界面
+
 ![下载界面](./preview/downloadPreview.png)
+
+> 7. 退出界面
 
 ![退出界面](./preview/logoutPreview.png)
 
