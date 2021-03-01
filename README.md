@@ -8,6 +8,7 @@
 
 - [B 站预览](https://www.bilibili.com/video/BV18b4y1X7TR/)
 - [码云地址](https://gitee.com/snowfield-wolf/cloud-music)
+- [github 地址](https://github.com/PhoenixJane/phoenix_CloudMusic.git)
 - [API 地址](https://binaryify.github.io/NeteaseCloudMusicApi/#/?id=neteasecloudmusicapi)
 
 ## 技术栈
@@ -32,6 +33,7 @@
 
 ```cmd
 npm install # 安装项目所需的依赖(如果速度过慢可以尝试cnpm, 或用nrm修改为淘宝镜像)
+node app.js #记得先下载网易云后台项目接口，然后在接口文件夹路径下通过终端输入命令
 npm run serve #启动项目服务
 ```
 
